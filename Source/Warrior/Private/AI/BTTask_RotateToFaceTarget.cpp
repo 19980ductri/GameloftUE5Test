@@ -104,7 +104,6 @@ bool UBTTask_RotateToFaceTarget::HasReachedAnglePrecision(APawn* QueryPawn, AAct
 	const float DotResult = FVector::DotProduct(OwnerForward, OwnerToTargetNormalized);
 	const float AngleDif = UKismetMathLibrary::DegAcos(DotResult);*/
 	const float AngleDif = UWarriorFunctionLibrary::NativeGetAngleDifference(QueryPawn, TargetActor, OwnerForward, OwnerToTargetNormalized);
-	UE_LOG(LogTemp, Display, TEXT("HasReachedAnglePrecision = %f"), AngleDif);
 	return AngleDif <= AnglePrecision;
 }
 

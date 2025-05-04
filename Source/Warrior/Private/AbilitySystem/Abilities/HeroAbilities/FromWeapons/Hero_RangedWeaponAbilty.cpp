@@ -223,6 +223,7 @@ void UHero_RangedWeaponAbilty::PerformWeaponTrace(FVector StartTrace, FVector En
 		}
 	}
 
+	/*
 	// Debug visualization
 #if ENABLE_DRAW_DEBUG
 	if (ACharacter* Character = Cast<ACharacter>(AvatarActor))
@@ -241,6 +242,7 @@ void UHero_RangedWeaponAbilty::PerformWeaponTrace(FVector StartTrace, FVector En
 		}
 	}
 #endif
+*/
 
 }
 
